@@ -6,11 +6,7 @@ import java.awt.event.ActionListener;
 public class About extends JFrame {
     private JButton back = new JButton("Back");
     public About() {
-
-        Container contentPane;
-        contentPane = getContentPane();
-        contentPane.setLayout(null);
-
+        setLayout(new GridBagLayout());
         add(back);
         back.setFont(new Font("Comic Sans MS", Font.PLAIN, 30));
         back.setBounds(0, 800, 200, 200);
